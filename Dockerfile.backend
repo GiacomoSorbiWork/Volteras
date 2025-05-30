@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app/Volteras
+COPY backend/requirements.txt ./
+RUN pip3 install --no-cache-dir -r requirements.txt
+COPY backend/ ./
+EXPOSE 8000
+CMD ["gunicorn", "backend_project.wsgi:application", "--bind", "0.0.0.0:8000"] 
+# CMD ["python3", "backend/manage.py", "runserver", "0.0.0.0:8000"]

@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+.env
+.env.*
+
+# Django
+*.db
+*.sqlite3
+media/
+staticfiles/
+
+# Frontend
+node_modules/
+.next/
+.next/cache/
+.npm/
+
+# Docker
+*.pid
+docker-compose.override.yml
+pgdata/
+
+# VSCode
+.vscode/
+
+# Mac/Windows
+.DS_Store
+Thumbs.db
+
+# Test/coverage
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# Build
+build/
+dist/
+*.egg-info/ 

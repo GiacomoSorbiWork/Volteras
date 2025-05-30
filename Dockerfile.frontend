@@ -1,0 +1,8 @@
+FROM node:18-alpine
+WORKDIR /app/Volteras
+COPY frontend_nextjs/package.json frontend_nextjs/package-lock.json ./
+RUN npm install
+COPY frontend_nextjs/ ./
+RUN npm run build
+EXPOSE 3000
+CMD ["npm", "start"] 

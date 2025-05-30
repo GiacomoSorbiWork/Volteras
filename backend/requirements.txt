@@ -1,0 +1,27 @@
+Django>=4.2
+
+# Django REST Framework
+djangorestframework
+
+# CORS support
+django-cors-headers
+
+#databse
+psycopg2-binary 
+
+#.env file
+python-decouple
+
+python-dateutil
+
+pytz
+
+pandas
+
+pytest
+
+gunicorn
+
+dj-database-url
+
+
