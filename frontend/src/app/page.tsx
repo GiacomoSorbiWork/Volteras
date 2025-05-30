@@ -178,11 +178,12 @@ export default function Home() {
             className="rounded-lg border border-neutral-700 px-5 py-2 transition-colors hover:border-neutral-600 dark:bg-neutral-800/30 dark:text-gray-200 dark:focus:bg-neutral-800/30"
             onChange={(e) => {
               const value = e.target.value;
-              if (value) handleExport(value);
+              if (value && value !== "default") handleExport(value);
               e.target.selectedIndex = 0; // Reset to default
             }}
-            defaultValue="csv"
+            defaultValue="default"
           >     
+            <option value="default" disabled>Export</option>
             <option value="csv">Export CSV</option>
             <option value="json">Export JSON</option>
             <option value="xlsx">Export Excel</option>
